@@ -1,0 +1,14 @@
+Compile project:
+    javac -d bin/ src/*.java
+
+Run project:
+    java --class-path bin Application
+    java --class-path bin Application "Ioana are mere si pere.Are si capsuni dar ale lui Andrei sunt mai mari si mai siropoase." "si" "poate"
+
+Package project:
+    jar cfm dist/Application.jar res/Manifest.txt -C bin .
+
+Run package:
+    java -jar dist/Application.jar
+    java -jar dist/Application.jar "Ioana are mere si pere.Are si capsuni dar ale lui Andrei sunt mai mari si mai siropoase. " "si" "poate"
+    
