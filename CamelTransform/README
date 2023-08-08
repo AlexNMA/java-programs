@@ -1,0 +1,14 @@
+Compile project:
+    javac -d bin/ src/*.java
+
+Run project:
+    java --class-path bin Application
+    java --class-path bin Application "random access identifier"
+
+Package project:
+    jar cfm dist/Application.jar res/Manifest.txt -C bin .
+
+Run package:
+    java -jar dist/Application.jar
+    java -jar dist/Application.jar "random access identifier"
+    
