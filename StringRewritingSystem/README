@@ -1,0 +1,27 @@
+Compile project:
+    javac -d bin/ src/*.java
+
+Run project:
+    java --class-path bin Application
+   
+
+Package project:
+    jar cfm dist/Application.jar res/Manifest.txt -C bin .
+
+Run package:
+    java -jar dist/Application.jar
+    
+    
+For the application to work, the following steps are required:
+1.) A txt file named "inputRulesAndExpression" and a txt file named "outputExpression";
+2.) Input text should be entered into "inputRulesAndExpression" for processing.
+
+	inputRulesAndExpression.txt{
+
+	Rules:
+	a b c -> a
+	c c -> d
+	d e -> a
+	Expression:
+	a a a b c c c d e
+				    }

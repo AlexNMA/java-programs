@@ -1,0 +1,15 @@
+Compile project:
+    javac -d bin/ src/*.java
+
+Run project:
+    java --class-path bin Application
+
+Package project:
+    jar cfm dist/Application.jar res/Manifest.txt -C bin .
+
+Run package:
+    java -jar dist/Application.jar
+    
+For the application to work, the following steps are required:
+1.) A txt file named "file";
+2.) Input text should be entered into "file.txt" for processing.
