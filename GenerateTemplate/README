@@ -1,0 +1,27 @@
+Compile project:
+    javac -d bin/ src/*.java
+
+Run project:
+    java --class-path bin Application
+    java --class-path bin Application "i" "iterator2"
+
+Package project:
+    jar cfm dist/Application.jar res/Manifest.txt -C bin .
+
+Run package:
+    java -jar dist/Application.jar
+    java -jar dist/Application.jar "i" "iterator2"
+
+For the application to work, the following steps are required:
+1.) A txt file named "variablesFile";
+2.) Input text should be entered into "variablesFile.txt" for processing.
+
+    Here's an example:
+int i = 8;
+String string = "Hello";
+String integerString = "245";
+var varChar;
+Char c = 'h';
+Long longerInteger = 51564646541;
+String catsNames = "Cat1, Cat 2, ... Cat 1254";
+int lastIndexPozitionInString = 295;
