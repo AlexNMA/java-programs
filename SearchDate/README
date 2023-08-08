@@ -1,0 +1,14 @@
+Compile project:
+    javac -d bin/ src/*.java
+
+Run project:
+    java --class-path bin Application
+    java --class-path bin Application "ioana s-a nascut la data de 18.03.2007, eu m-am nascut la data de 20-01-2000 iar alt cineva poate s-a nascut la data de 15/04/2019"
+
+Package project:
+    jar cfm dist/Application.jar res/Manifest.txt -C bin .
+
+Run package:
+    java -jar dist/Application.jar
+    java -jar dist/Application.jar "ioana s-a nascut la data de 18.03.2007, eu m-am nascut la data de 20-01-2000 iar alt cineva poate s-a nascut la data de 15/04/2019"
+    
